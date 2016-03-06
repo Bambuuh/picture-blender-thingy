@@ -25,6 +25,9 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                 LoginComponent.prototype.status = function () {
                     return this.loggedIn ? "loggedIn" : "loggedOut";
                 };
+                LoginComponent.prototype.getIcon = function () {
+                    return this.loggedIn ? "fa-sign-out" : "fa-sign-in";
+                };
                 LoginComponent.prototype.getPrettifiedMedia = function () {
                     return this.socialMedia.charAt(0).toUpperCase() + this.socialMedia.slice(1);
                 };

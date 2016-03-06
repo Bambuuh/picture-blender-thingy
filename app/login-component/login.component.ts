@@ -13,7 +13,11 @@ export class LoginComponent {
     loggedIn = false;
     
     status() {
-        return this.loggedIn ? "loggedIn" : "loggedOut";        
+        return this.loggedIn ? "loggedIn" : "loggedOut";
+    }
+    
+    getIcon() {
+        return this.loggedIn ? "fa-sign-out" : "fa-sign-in";
     }
     
     getPrettifiedMedia() {
