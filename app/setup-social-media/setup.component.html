@@ -1,20 +1,22 @@
 <div class="setup-hashtag-container">
     <div class="setup-content-wrapper">
-        <h1>bla bla bla a simple hastag can change the party bla bla bla</h1>
-        <login social-media="twitter"></login>
+        <h1>Select which social medias to use</h1>
+        <login class="first" social-media="twitter"></login>
         <login social-media="instagram"></login>
-        <login social-media="facebook"></login>
-        <h2>Choose your</h2>
-        <input 
-            [(ngModel)]="hashtag"
-            placeholder="#hashTag">
-        <div class="cta-link">
-            Let the show
-            <button
-                class="begin-button" 
-                [routerLink]="['Blender']">
-                begin
-            </button>
+        <login class="last" social-media="facebook"></login>
+        <div class="hashtag-wrapper">
+            <h1>Choose your hashtag</h1>
+            <input 
+                [(ngModel)]="hashtag"
+                placeholder="#hashTag">
+            <div class="cta-link">
+                Let the show
+                <button
+                    class="begin-button" 
+                    [routerLink]="['Blender']">
+                    begin
+                </button>
+            </div>
         </div>
     </div>
 </div>
