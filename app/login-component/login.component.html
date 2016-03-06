@@ -1,17 +1,6 @@
-<!--<div class="ng-animate login-wrapper" *ngIf="!loggedIn">
-    <i [class]="'media-icon fa fa-' + socialMedia"></i>
-    <div class="login-inputs">
-        <input type="text" placeholder="Username">
-        <input type="password" placeholder="Password">
-    </div>
-    <div class="login-button" (click)="logIn()">
-        <i class="sign-icon fa fa-sign-in"></i>
-    </div>
-</div>-->
-<!--<div class="ng-animate logout-wrapper" *ngIf="loggedIn">-->
-<div class="ng-animate logout-wrapper">
+<div class="ng-animate login-wrapper">
     <i [class]="status() + ' media-icon active-media fa fa-' + socialMedia"></i>
-    <div [class]="status() + ' login-button logout'" (click)="toggleLogin()">
+    <div [class]="status() + ' login-button'" (click)="toggleLogin()">
         <i class="sign-icon fa fa-sign-out"></i>    
     </div>
 </div>

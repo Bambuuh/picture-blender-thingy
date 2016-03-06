@@ -18,6 +18,9 @@ h2 {
     margin-bottom: 8px;
     color: #fff;
 }
+.setup-content-wrapper login:not(:last-of-type) {
+    margin-right: 16px;
+}
 input:focus {
     outline: none;
 }
