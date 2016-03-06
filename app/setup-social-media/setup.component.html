@@ -1,20 +1,21 @@
 <div class="setup-hashtag-container">
     <div class="setup-content-wrapper">
-        <h1>Select which social medias to use</h1>
-        <login class="first" social-media="twitter"></login>
-        <login social-media="instagram"></login>
-        <login class="last" social-media="facebook"></login>
+        <h1>Choose your social medias</h1>
+        <div class="login-wrapper">
+            <login class="first" social-media="twitter"></login>
+            <login social-media="instagram"></login>
+            <login class="last" social-media="facebook"></login>
+        </div>
         <div class="hashtag-wrapper">
             <h1>Choose your hashtag</h1>
             <input 
                 [(ngModel)]="hashtag"
                 placeholder="#hashTag">
             <div class="cta-link">
-                Let the show
                 <button
                     class="begin-button" 
                     [routerLink]="['Blender']">
-                    begin
+                    Let the show begin
                 </button>
             </div>
         </div>

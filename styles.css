@@ -1,10 +1,17 @@
+@font-face {
+    font-family: CODE;
+    src: url(misc/code-font/CODE_Light.otf);
+}
 body {
     background-color: #06102D;
     margin: 0;
 }
+h1 {
+    margin: 16px 0;
+}
 h2 {
     color: #C3C3C3;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Josefin Sans', Helvetica, sans-serif;
     font-weight: lighter;
 }
 body, input[text], button {
@@ -30,7 +37,7 @@ button:disabled {
 
 /* everwhere else */
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Josefin Sans', Helvetica, sans-serif;
 }
 input {
     height: 2em;
