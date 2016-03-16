@@ -2,3 +2,13 @@
     height: 100%;
     width: 100%;
 }
+.content {
+    width: 86%;
+    height: 86%;
+    padding: 4%;
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border-radius: 1%;
+}

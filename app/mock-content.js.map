@@ -1,0 +1,1 @@
+{"version":3,"file":"mock-content.js","sourceRoot":"","sources":["mock-content.ts"],"names":[],"mappings":";;;QAEa,OAAO;;;;YAAP,qBAAA,OAAO,GAAG;gBACf;oBACI,QAAQ,EAAE,SAAS;oBACnB,OAAO,EAAE,WAAW;iBACvB;gBACD;oBACI,QAAQ,EAAE,WAAW;oBACrB,OAAO,EAAE,0BAA0B;iBACtC;gBACD;oBACI,QAAQ,EAAE,UAAU;oBACpB,OAAO,EAAE,cAAc;iBAC1B;aACJ,CAAA,CAAC"}
