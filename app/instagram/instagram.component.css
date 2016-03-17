@@ -1,0 +1,25 @@
+:host {
+    background-color: white;
+    padding: 2%;
+}
+.instagram-profile {
+    width: 12%;
+    height: auto;
+}
+.instagram-header {
+    position: relative;
+    margin-bottom: 1%;
+}
+.instagram-username {
+    color: #3F739A;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 4vw;
+    top: 50%;
+    position: absolute;
+    left: 23%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.instagram-photo {
+    width: 100%
+}

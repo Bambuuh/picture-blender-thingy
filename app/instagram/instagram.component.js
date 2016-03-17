@@ -20,11 +20,23 @@ System.register(['angular2/core'], function(exports_1, context_1) {
         execute: function() {
             InstagramComponent = (function () {
                 function InstagramComponent() {
+                    this.userName = "username";
+                    this.profilePicture = "https://pbs.twimg.com/profile_images/1743668158/Twitter_Profile_Pic__2__400x400.jpg";
+                    this.photo = "http://cdn1.tnwcdn.com/wp-content/blogs.dir/1/files/2013/08/158539421.jpg";
                 }
+                InstagramComponent.prototype.getProfilePicture = function () {
+                    return this.profilePicture;
+                };
+                InstagramComponent.prototype.getUserName = function () {
+                    return this.userName;
+                };
+                InstagramComponent.prototype.getPhoto = function () {
+                    return this.photo;
+                };
                 InstagramComponent = __decorate([
                     core_1.Component({
                         selector: 'instagram',
-                        template: "\n        <div class=\"instagram-wrapper\">\n            \n            <h1>Instagram</h1>\n        </div>\n   ",
+                        templateUrl: "app/instagram/instagram.component.html",
                         styleUrls: [
                             'app/instagram/instagram.component.css'
                         ]
