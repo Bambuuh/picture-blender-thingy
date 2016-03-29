@@ -20,22 +20,10 @@ System.register(['angular2/core'], function(exports_1, context_1) {
         execute: function() {
             TwitterComponent = (function () {
                 function TwitterComponent() {
-                    this.displayName = "username";
-                    this.atName = "@username";
                     this.message = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus comm.";
-                    this.profilePicture = "https://pbs.twimg.com/profile_images/1743668158/Twitter_Profile_Pic__2__400x400.jpg";
                 }
-                TwitterComponent.prototype.getUserName = function () {
-                    return this.displayName;
-                };
-                TwitterComponent.prototype.getAtName = function () {
-                    return this.atName;
-                };
                 TwitterComponent.prototype.getMessage = function () {
                     return this.message;
-                };
-                TwitterComponent.prototype.getProfilePicture = function () {
-                    return this.profilePicture;
                 };
                 TwitterComponent = __decorate([
                     core_1.Component({
