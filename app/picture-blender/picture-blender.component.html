@@ -5,10 +5,10 @@
     <template [ngSwitchWhen]="'twitter'"><twitter class="content" [content]="currentContent"></twitter></template>
     <template [ngSwitchWhen]="'facebook'"><facebook class="content" [content]="currentContent"></facebook></template>
     <template [ngSwitchWhen]="'instagram'"><instagram class="content" [content]="currentContent"></instagram></template>
-    <div class="user-info" *ngIf="currentContent">
+    <!--<div class="user-info" *ngIf="currentContent">
         <img class="user-info-profile-picture" src="{{getProfilePicture()}}"/>
         <div class="user-info-username">
             {{getUserName()}}
         </div>
-    </div>
+    </div>-->
 </div>

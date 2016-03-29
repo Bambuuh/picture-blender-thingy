@@ -1,4 +1,4 @@
-System.register(['angular2/core', '../user-info/user-info.component'], function(exports_1, context_1) {
+System.register(['angular2/core'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,40 +10,39 @@ System.register(['angular2/core', '../user-info/user-info.component'], function(
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, user_info_component_1;
-    var FacebookComponent;
+    var core_1;
+    var UserInfoComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
-            },
-            function (user_info_component_1_1) {
-                user_info_component_1 = user_info_component_1_1;
             }],
         execute: function() {
-            FacebookComponent = (function () {
-                function FacebookComponent() {
+            UserInfoComponent = (function () {
+                function UserInfoComponent() {
                 }
-                FacebookComponent.prototype.getMessage = function () {
-                    return this.content.message;
+                UserInfoComponent.prototype.getProfilePicture = function () {
+                    return this.content.profilePicture;
+                };
+                UserInfoComponent.prototype.getUserName = function () {
+                    return this.content.userName;
                 };
                 __decorate([
                     core_1.Input(), 
                     __metadata('design:type', Object)
-                ], FacebookComponent.prototype, "content", void 0);
-                FacebookComponent = __decorate([
+                ], UserInfoComponent.prototype, "content", void 0);
+                UserInfoComponent = __decorate([
                     core_1.Component({
-                        selector: 'facebook',
-                        templateUrl: "app/facebook/facebook.component.html",
-                        styleUrls: ['./app/facebook/facebook.component.css'],
-                        directives: [user_info_component_1.UserInfoComponent],
+                        selector: 'user-info',
+                        templateUrl: 'app/user-info/user-info.component.html',
+                        styleUrls: ['./app/user-info/user-info.component.css'],
                     }), 
                     __metadata('design:paramtypes', [])
-                ], FacebookComponent);
-                return FacebookComponent;
+                ], UserInfoComponent);
+                return UserInfoComponent;
             }());
-            exports_1("FacebookComponent", FacebookComponent);
+            exports_1("UserInfoComponent", UserInfoComponent);
         }
     }
 });
-//# sourceMappingURL=facebook.component.js.map
+//# sourceMappingURL=user-info.component.js.map

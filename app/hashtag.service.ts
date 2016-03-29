@@ -11,11 +11,11 @@ export class HashtagService {
             provider: "twitter",
             userName: "twitterUser",
             profilePicture: "http://zblogged.com/wp-content/uploads/2015/11/5.png",
-            message: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus comm.",
+            message: "FACEBOOK Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque.",
         },
         {
             provider: "facebook",
-            message: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus comm.",
+            message: "TWITTER Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque.",
             userName: "facebookUser",
             profilePicture: "https://upload.wikimedia.org/wikipedia/en/7/70/Shawn_Tok_Profile.jpg",
         },
