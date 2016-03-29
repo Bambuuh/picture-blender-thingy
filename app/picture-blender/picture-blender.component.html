@@ -1,7 +1,14 @@
 <div class="blender" [ngSwitch]="currentContent?.provider">
     <!--<twitter class="content" ></twitter>-->
-    <instagram class="content" ></instagram>
+    <!--<instagram class="content" ></instagram>-->
+    <facebook class="content"></facebook>
     <!--<template [ngSwitchWhen]="'twitter'"><twitter class="content" ></twitter></template>
     <template [ngSwitchWhen]="'facebook'"><facebook class="content" ></facebook></template>
     <template [ngSwitchWhen]="'instagram'"><instagram class="content" ></instagram></template>-->
+    <div class="user-info">
+        <img class="user-info-profile-picture" src="{{getProfilePicture()}}"/>
+        <div class="user-info-username">
+            {{getUserName()}}
+        </div>
+    </div>
 </div>

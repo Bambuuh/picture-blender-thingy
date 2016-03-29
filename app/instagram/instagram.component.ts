@@ -2,9 +2,9 @@ import { Component } from 'angular2/core';
 
 @Component({
     selector: 'instagram',
-   templateUrl: "app/instagram/instagram.component.html",
-   styleUrls: [
-       'app/instagram/instagram.component.css'
+    templateUrl: "app/instagram/instagram.component.html",
+    styleUrls: [
+        'app/instagram/instagram.component.css'
    ]
 })
 

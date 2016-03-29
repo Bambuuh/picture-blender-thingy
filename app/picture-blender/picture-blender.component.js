@@ -35,6 +35,9 @@ System.register(['angular2/core', '../hashtag.service', '../instagram/instagram.
                     this._hashtagService = _hashtagService;
                     this.content = [];
                     this.index = 0;
+                    this.userName = "username";
+                    this.profilePicture = "https://pbs.twimg.com/profile_images/1743668158/Twitter_Profile_Pic__2__400x400.jpg";
+                    this.photo = "http://cdn1.tnwcdn.com/wp-content/blogs.dir/1/files/2013/08/158539421.jpg";
                 }
                 PictureBlenderComponent.prototype.ngOnInit = function () {
                     var _this = this;
@@ -57,6 +60,15 @@ System.register(['angular2/core', '../hashtag.service', '../instagram/instagram.
                     else {
                         this.index = 0;
                     }
+                };
+                PictureBlenderComponent.prototype.getProfilePicture = function () {
+                    return this.profilePicture;
+                };
+                PictureBlenderComponent.prototype.getUserName = function () {
+                    return this.userName;
+                };
+                PictureBlenderComponent.prototype.getPhoto = function () {
+                    return this.photo;
                 };
                 PictureBlenderComponent = __decorate([
                     core_1.Component({
