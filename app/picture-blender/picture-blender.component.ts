@@ -26,7 +26,7 @@ import { FacebookComponent } from '../facebook/facebook.component';
 
 export class PictureBlenderComponent implements OnInit {
     
-    content = [];
+    content: Content[];
     currentContent: Content;
     index = 0;
     
@@ -55,19 +55,15 @@ export class PictureBlenderComponent implements OnInit {
         }
     }
     
-    userName = "username";
-    profilePicture = "https://pbs.twimg.com/profile_images/1743668158/Twitter_Profile_Pic__2__400x400.jpg";
-    photo = "http://cdn1.tnwcdn.com/wp-content/blogs.dir/1/files/2013/08/158539421.jpg";
-    
     getProfilePicture() {
-        return this.profilePicture;
+        return this.currentContent.profilePicture;
     }
     
     getUserName() {
-        return this.userName;
+        return this.currentContent.userName;
     }
     
-    getPhoto() {
-        return this.photo;
+    getContent() {
+        return this.currentContent.message || this.currentContent.photo;
     }
 }

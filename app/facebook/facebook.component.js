@@ -20,11 +20,14 @@ System.register(['angular2/core'], function(exports_1, context_1) {
         execute: function() {
             FacebookComponent = (function () {
                 function FacebookComponent() {
-                    this.message = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus comm.";
                 }
                 FacebookComponent.prototype.getMessage = function () {
-                    return this.message;
+                    return this.content.message;
                 };
+                __decorate([
+                    core_1.Input(), 
+                    __metadata('design:type', Object)
+                ], FacebookComponent.prototype, "content", void 0);
                 FacebookComponent = __decorate([
                     core_1.Component({
                         selector: 'facebook',

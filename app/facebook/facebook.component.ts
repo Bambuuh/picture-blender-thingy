@@ -1,4 +1,6 @@
-import { Component } from 'angular2/core';
+import { Component, Input } from 'angular2/core';
+
+import { Content } from '../content';
 
 @Component({
     selector: 'facebook',
@@ -7,9 +9,9 @@ import { Component } from 'angular2/core';
 })
 
 export class FacebookComponent {
-    message = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus comm.";
-    
+
+    @Input() content:Content;    
     getMessage() {
-        return this.message;
+        return this.content.message;
     }
 }

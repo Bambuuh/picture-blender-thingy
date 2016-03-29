@@ -20,11 +20,14 @@ System.register(['angular2/core'], function(exports_1, context_1) {
         execute: function() {
             TwitterComponent = (function () {
                 function TwitterComponent() {
-                    this.message = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus comm.";
                 }
                 TwitterComponent.prototype.getMessage = function () {
-                    return this.message;
+                    return this.content.message;
                 };
+                __decorate([
+                    core_1.Input(), 
+                    __metadata('design:type', Object)
+                ], TwitterComponent.prototype, "content", void 0);
                 TwitterComponent = __decorate([
                     core_1.Component({
                         selector: 'twitter',

@@ -1,4 +1,7 @@
 export interface Content {
     provider: string;
-    content: string;
+    userName: string;
+    profilePicture: string;
+    message?: string;
+    photo?: string;
 }

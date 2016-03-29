@@ -1,4 +1,6 @@
-import { Component } from 'angular2/core';
+import { Component, Input } from 'angular2/core';
+
+import { Content } from '../content';
 
 @Component({
     selector: 'twitter',
@@ -7,12 +9,12 @@ import { Component } from 'angular2/core';
 })
 
 export class TwitterComponent {
+    
+    @Input() content: Content;
     constructor() {}
     
-    message = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus comm.";
-    
     getMessage() {
-        return this.message;
+        return this.content.message;
     }
     
 }
